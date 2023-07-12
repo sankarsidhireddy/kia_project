@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <style>
+        .nav{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    background-color: #e0e0e0;
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+}
+
+.nav:hover{
+    background-color: gray;
+}
+.logo img{
+    width: 100px;
+    height: 100px;
+    padding-left: 20px;
+    border-radius: 10px;
+}
+.memu{
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    font-style: italic;
+}
+.memu div a{
+    width: 20%;
+    font-size: 20px;
+    color: rgb(25, 75, 25);
+    transition: width .2s; 
+
+}
+.nav a:hover{
+    width: 100%;
+    text-decoration: underline 2px gold;
+    
+}
+/* button{
+    position: relative;
+    left: 40%;
+    width: 80px;
+    height: 20px;
+    bottom: 40px;
+    background-color: blueviolet;   
+} */
+.foot{
+    position: relative;
+    width: 100%;
+    height: 150vh;
+    background-color: black;
+    margin-top: 10%;
+}
+#footimg{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 8%;
+}
+.underline1 h1{
+    font-size: 20px;
+    color: white;
+    left: 6%;
+    top: 17%;
+}
+.underline1{
+    position: absolute;
+    left: 6%;
+    top: 17%;
+    
+}
+.underline{
+    display: inline-block;
+    position: relative;
+
+}
+.underline:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color:  #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.50s ease-out;
+  }
+  .underline:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  .underline2 p{
+    font-size: 20px;
+    color: grey;
+    left: 25%;
+    top: 17%;
+  }
+  .underline2{
+    position: absolute;
+    left: 25%;
+    top: 17%;
+    
+}
+.underline2 #p1{
+    font-size: 20px;
+    color: white;
+    left: 25%;
+    top: 17%;
+  }
+  /* .underline #p1{
+    position: absolute;
+    left: 28%;
+    top: 17%;
+    
+} */
+
+.underline3 #p2{
+    font-size: 20px;
+    color: white;
+    left: 42%;
+    top: 17%;
+  }
+  .underline3{
+    position: absolute;
+    left: 42%;
+    top: 17%;
+    
+}
+.underline3 p{
+    font-size: 20px;
+    color: grey;
+    left: 42%;
+    top: 17%;
+  }
+  .underline4 #p3{
+    font-size: 20px;
+    color: white;
+    left: 60%;
+    top: 17%;
+  }
+  .underline4{
+    position: absolute;
+    left: 60%;
+    top: 17%;
+    
+}
+.underline4 p{
+    font-size: 20px;
+    color: grey;
+    left: 60%;
+    top: 17%;
+  }
+  .underline5 #p4{
+    font-size: 20px;
+    color: white;
+    left: 70%;
+    top: 17%;
+  }
+  .underline5{
+    position: absolute;
+    left: 70%;
+    top: 17%;
+    
+}
+.underline5 p{
+    font-size: 20px;
+    color: grey;
+    left: 70%;
+    top: 17%;
+  }
+.icons{
+    position: absolute;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    top: 80%;
+
+}
+.con1{
+    position: absolute;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    top: 90%;
+}
+.owner1 h1{
+    position: relative;
+    color: black;
+    top: 20%;
+    left: 5%;
+    font-size: 30px;
+    padding-top: 10%;
+}
+.owner1 p{
+    position: relative;
+    color: black;
+    top: 25%;
+    left: 5%;
+    width: 40%;
+    height: 30%;
+    font-size: 20px;
+}
+.owner1 img{
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    width: 50%;
+    height: 60%;
+    box-shadow: 5px 5px 5px 5px white;
+}
+.owner1 img:hover{
+    box-shadow: 5px 5px 5px 5px blue;
+}
+.owner2 h1{
+    position: relative;
+    color: black;
+    padding-top: 15%;
+    left: 60%;
+    font-size: 30px;
+}
+.owner2 p{
+    position: relative;
+    color: black;
+    /* padding-top: 1%; */
+    left: 60%;
+    font-size: 20px;
+    width: 40%;
+    height: 10px; 
+}
+.owner2 button{
+    position: relative;
+    padding-top: 0%;
+    left: 66%;
+    font-size: 20px;
+    width: 25%;
+    height: 40px;
+    margin-top: 8%;
+    background-color: white;
+    border-radius: 15px;
+}
+.owner2 img{
+    position: absolute;
+    left: 5%;
+    top: 90%;
+    width: 50%;
+    height: 60%;
+    box-shadow: 5px 5px 5px 5px white;
+}
+.owner2 img:hover{
+    box-shadow: 5px 5px 5px 5px rgb(26, 71, 71);
+}
+
+.owner3 h1{
+    position: relative;
+    color: black;
+    padding-top: 25%;
+    left: 5%;
+    font-size: 30px;
+}
+.owner3 p{
+    position: relative;
+    color: black;
+    top: 25%;
+    left: 5%;
+    width: 40%;
+    height: 30%;
+    font-size: 20px;
+}
+.owner3 button{
+    position: relative;
+    padding-top: 0%;
+    left: 10%;
+    font-size: 20px;
+    width: 25%;
+    height: 40px;
+    margin-top: 3%;
+    background-color: white;
+    border-radius: 15px;
+}
+.owner3 img{
+    position: absolute;
+    left: 50%;
+   margin-top: -19%;
+    width: 50%;
+    height: 60%;
+    box-shadow: 5px 5px 5px 5px white;
+}
+.owner3 img:hover{
+    box-shadow: 5px 5px 5px 5px indianred;
+}
+.owner4 h1{
+    position: relative;
+    color: black;
+    padding-top: 15%;
+    left: 60%;
+}
+.owner4 p{
+    position: relative;
+    color: black;
+    /* padding-top: 1%; */
+    left: 60%;
+    font-size: 20px;
+    width: 40%;
+    height: 10px; 
+}
+.owner4 button{
+    position: relative;
+    padding-top: 0%;
+    left: 66%;
+    font-size: 20px;
+    width: 25%;
+    height: 40px;
+    margin-top: 15%;
+    background-color: white;
+    border-radius: 15px;
+}
+.owner4 img{
+    position: absolute;
+    left: 3%;
+    margin-top: -8%;
+    width: 50%;
+    height: 60%;
+    box-shadow: 5px 5px 5px 5px white;
+}
+.owner4 img:hover{
+    box-shadow: 5px 5px 5px 5px rgb(112, 57, 57);
+}
+.owner5{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;    
+    margin-top: 10%;
+   
+    
+}
+.owner5 img{
+        width: 30%;
+        height: 35vh;
+}
+.h1{
+    position: relative;
+    color: black;
+    margin-top: 10%;
+    left: 5%;
+    font-size: 30px;
+}
+.foot input{
+    position: absolute;
+    left: 60%;
+    top: 7%;
+    width: 15%;
+    height: 20px;
+}
+.foot #i{
+    position: absolute;
+    left: 76%;
+    top: 7%;
+    width: 15%;
+    height: 20px;
+    color: white;
+    font-size: 20px;
+}
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="logo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS34CXr8t6xarpb6tDMdmuJD6ZlXq1V8ldBGtJyB8BT-zdiNgCvwPQHLroxNTKdv8ioEEpCRDQrAWI&usqp=CAU&ec=48600113" alt="">
+        </div>
+        <div class="memu">
+            <div><a href="./index.html">Home</a></div>
+            <div><a href="./prj1.html">Cars</a></div>
+            <div><a href="./buy.html">Buy</a></div>
+            <div><a href="./imgprj.html">Images</a></div>
+            <div><a href="./owner.html">Owners</a></div>
+            <div><a href="./log.html">Login</a></div>
+        </div>
+    </nav>
+    <div class="owner1">
+        <h1>Welcome, Kia Owners!</h1>
+        <p>The owner’s portal is your one-stop shop for all things Kia. Once signed up, you can see
+             maintenance milestones, book appointments at your preferred dealer, make car payments
+              (if financed by Kia Finance), access vehicle remote connectivity features (if equipped and eligible), digital owner’s manuals and more from your connected devices to get info quickly and on demand. We’re committed to providing the best experience for you on or off the road. Create an 
+            account now and enjoy all we have to offer you. Thank you for being a loyal Kia customer!</p>
+        <img src="https://owners.kia.com/content/dam/kia/us/owners/image/kop-home/hp_welcome_2x.png" alt="">
+    </div>
+    <div class="owner2">
+        <h1>Electrify America Kia Charge <br> Pass Program</h1>
+        <p>Learn more about the 1,000 kilowatt-hours (kWh)
+             of complimentary charging on Electrify America's nationwide charging network.</p>
+             <button>Learn More</button> 
+             <img src="https://owners.kia.com/content/dam/kia/us/owners/image/kop-home/hp_ea_2x.png" alt="">
+    </div>
+    <div class="owner3">
+        <h1>Kia Connect</h1>
+        <p>Kia Connect connects your
+             personal device with your vehicle to meet your Kia's needs. With 
+              Connect, you can unlock better driving and ownership experiences, 
+              and peace of mind. Where available.</p>
+              <button>Learn More</button>
+              <img src="https://owners.kia.com/content/dam/kia/us/owners/image/kop-home/hp_devices_2x.jpg" alt="">
+    </div>
+    <div class="owner4">
+        <h1>Kia Maintenance Plan</h1>
+        <p>Maintaining your Kia should be convenient, efficient, and easy. Now
+             you can keep your Kia running smoothly while managing your maintenance
+              cost with the prepaid Kia Maintenance Plan (KMP). The plan gives you 
+              access to our extensive network of Kia-trained technicians that use Genuine Kia Parts.
+             No longer will you need to worry about increasing labor and parts 
+             cost to maintain your vehicle.</p>
+             <button>Learn More</button>
+             <img src="https://owners.kia.com/content/dam/kia/us/owners/image/kop-home/hp_kmp_2x.png" alt="">
+        </div>
+        <div class="h1">
+            <h1>More to Explore</h1>
+        </div>
+        <div class="owner5">
+            <img src="https://owners.kia.com/content/dam/kia/us/owners/image/kop-home/more_setup_2x.jpg" alt="">
+            <img src="https://owners.kia.com/content/dam/kia/us/owners/image/kop-home/more_compare_2x.jpg" alt="">
+            <img src="https://owners.kia.com/content/dam/kia/us/owners/image/kop-home/more_support_2x.jpg" alt="">
+        </div>
+             <div class="foot">
+                <input type="text" placeholder="search">
+        <i id="i" class="fa-solid fa-magnifying-glass"></i>
+        <img id="footimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANsAAAB7CAMAAADKQQWcAAAAY1BMVEUBAQH+/v4AAACmpqYtLS0kJCTf39+MjIybm5vv7+/z8/P4+Pjn5+fT09PY2Nh5eXkZGRltbW1zc3MeHh5jY2M+Pj42NjbExMRXV1fNzc1RUVFdXV24uLitra2BgYEKCgpJSUkg7wqWAAADTklEQVR4nO2Z23aCMBBFdRC5KuANxSr9/6/sRCtOQpCwWsSHs9+6SJrZyZhMYDYDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+FWLcWtkYMsrgTn+Fh1r0j8attr4F1ziJ8qZP/i45Ij9M6r7B2N9bLS14C6c4qQ5PTZ/V5h1yKj926/m8ZyxulXErK1eHOImqk+wT+eO7ccz726Cv4+NW0mypxRn2unE2e8aEuC32X+DfQBjN+9xUOibPsJIwvw5x4/krVuZij+3Gg1bp71jd8anQUhHV6kwUOLuR6n9J5iYju7FZ2YzVGR/RUU56WnBLdzellkUts7HdePbFoPb4eM59L5Ye6rAYsG6czl8Ws5HdjACt8al0lJN++r43c3Xj/huZzm9z87VRbfHx6SA3xOXmUU84uhF92xdtdLeFNpYZn8q8XEtH79CUSk5u3DoU0xdpfaZ0Y7V6I9IxWana6tHGxY0XTS76l08f40a7UjxdZyTUHNzUwSkWfan6f4YbB9JKR61vj1tT7Yj+n+FGVGtH0mlh3kl63FTxLRf9eFv06d3UBJ9L7dGudd165UZGiZV429vz6d1UZJdYezKPjgPc1D+Qxefy3Pznyd3qq2HGxOZt66VbJjf+8HluTOtGWoUpV27ntpeoC/xFPCmPJJ5N6aYO63bBbpPrcFMlltiE4qDWdqgJ3Wh2lVXYScvNSEtLuxtv/LLEKvfGHjOh2167ylzrTHseyw3F5saTI+cmDlrVgOyTjvpOwXA7GDdrlV9ag6h4BmtxM0qssvUmS3czzUd1k4d1Wd0P20z79XFadrtRHsiN/9p+AyndonHVTLcn8SZ//H70lYurznsAHbS6+GAJXbiVrQPzPW7iROJwCm3lmnPOdPPl3+uzNfLGLa1k2f1Gt9uJ9Mw9My0L2707OMsS67Ltus79zl0+/itzm1tc1ObmVuirel8T3S0Sp0XamW53t9N+bK/bWLn5zjDy2jPKvzntnEtuL5HpYD/jZUK3xmO3dbvsHgU+0EJPEla2cfmSKptdgvuGX3gWwld7BNVJ6Pxd5K84fm2ytur6XPX65fT7vky1IhzSbKjZvcv/hg8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPwnP4FFIYwJcp+LAAAAAElFTkSuQmCC" alt="">  
+        <div class="underline1">
+        <h1 class="underline">VR Showroom</h1>
+        <br>
+        <br>
+        <h1 class="underline">Configure</h1>
+        <br>
+        <br>
+        <h1 class="underline">Book Online</h1>
+        <br>
+        <br>
+        <h1 class="underline">My Order</h1>
+        <br>
+        <br>
+        <h1 class="underline">Find a Dealer</h1>
+        <br>
+        <br>
+        <h1 class="underline">Test Drive</h1>
+        <br>
+        <br>
+        <h1 class="underline">Contact Us</h1>
+        <br>
+        <br>
+        <h1 class="underline">Become a Kia Partner</h1>
+    </div>
+    <div class="underline2">
+        <p id="p1" class="underline">Buy</p>
+        <br>
+        <!-- <br> -->
+        <p class="underline">How it Works</p>
+        <br>
+        <!-- <br> -->
+        <p class="underline">Configure</p>
+        <br>
+        <!-- <br> -->
+        <p class="underline">Download Brochure</p>
+        <br>
+        <!-- <br> -->
+        <p class="underline">Find a Dealer</p>
+        <br>
+        <!-- <br> -->
+        <p class="underline">Kia Digi Connect</p>
+        <br>
+        <!-- <br> -->
+        <p class="underline">Test Drive</p>
+        <br>
+        <!-- <br> -->
+        <p class="underline">Book Online</p>
+        <br>
+        <!-- <br> -->
+        <p class="underline">EMI Calculator</p>
+        <br>
+        <!-- <br> -->
+        <p class="underline">My Order</p>
+    </div>
+    <div class="underline3">
+        <p id="p2" class="underline">Owners</p>
+        <br>
+        <br>
+        <p class="underline">Kia Service</p>
+        <br>
+        <br>
+        <p class="underline">Service and <br> Maintenance</p>
+        <br>
+        <br>
+        <p class="underline">Service Offerings</p>
+        <br>
+        <br>
+        <p class="underline">Customer Awareness</p>
+        <br>
+        <br>
+        <p class="underline">EV Owners</p>
+        <br>
+        <br>
+        <p class="underline">IoT Experience </p>
+    </div>
+    <div class="underline4">
+        <p id="p3" class="underline">Discover Kia</p>
+        <br>
+        <br>
+        <p class="underline">Our Story</p>
+        <br>
+        <br>
+        <p class="underline">Kia in India</p>
+        <br>
+        <br>
+        <p class="underline">Innovation</p>
+        <br>
+        <br>
+        <p class="underline">News</p>
+        <br>
+        <br>
+        <p class="underline">Kia Art Beat</p>
+        <br>
+        <br>
+        <p class="underline">PBV</p>
+    </div>
+    <div class="underline5">
+        <p id="p4" class="underline">Legal</p>
+        <br>
+        <!-- <br> -->
+        <p class="underline">Privacy Policy</p>
+        <br>
+        <!-- <br> -->
+        <p class="underline">Terms of Use</p>
+        <br>
+        <!-- <br> -->
+        <p class="underline">Online Sales T&C</p>
+        <br>
+        <!-- <br> -->
+        <p class="underline">Contact Us</p>
+        <br>
+        <!-- <br> -->
+        <p class="underline">CSR Policy</p>
+        <br>
+        <!-- <br> -->
+        <p class="underline">CSR Plans 2022-23</p>
+        <br>
+        <!-- <br> -->
+        <p class="underline">Composition of CSR <br> Committe</p>
+        <br>
+        <!-- <br> -->
+        <p class="underline">Whistle Blower Policy</p>
+    </div>
+    <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-pinterest"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-solid fa-phone"></i>
+    </div>
+    <div class="con1">
+        <p><i class="fa-solid fa-user"></i>&nbsp; &nbsp;Show Interest</p>
+        <p><i class="fa-solid fa-gears"></i>&nbsp; &nbsp; Test Drive</p>
+        <p><i class="fa-sharp fa-solid fa-car-side"></i>&nbsp; &nbsp;Get a Quote</p>
+        <p><i class="fa-solid fa-phone"></i>&nbsp; &nbsp;Call</p>
+    
+    </div>
+    </div>
+</body>
+</html>

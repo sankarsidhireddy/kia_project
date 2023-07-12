@@ -1,0 +1,297 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    outline: 0px;
+}
+.nav{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    background-color: #e0e0e0;
+    position: fixed;
+    z-index: 1;
+}
+
+.nav:hover{
+    background-color: gray;
+}
+.logo img{
+    width: 100px;
+    height: 100px;
+    padding-left: 20px;
+    border-radius: 10px;
+}
+.memu{
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    font-style: italic;
+}
+.memu div a{
+    width: 20%;
+    font-size: 20px;
+    color: rgb(25, 75, 25);
+    transition: width .2s; 
+
+}
+.nav a:hover{
+    width: 100%;
+    text-decoration: underline 2px gold;
+    
+}
+.home img{
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    position: relative;
+    padding-top: 10%;
+}
+.it{
+    position: absolute;
+    top:58%;
+    left: 30px;
+    color: chartreuse;
+    font-size: 40px;
+}
+.gt{
+    position: absolute;
+    top:58%;
+    right: 30px;
+    color: chartreuse;
+    font-size: 40px;
+}
+.circon{
+    position: absolute;
+    width: 50%;
+    left: 40%;
+    bottom: -90px;
+}
+.circon .fa-solid{
+    color: blue;
+    font-size: 15px;
+
+}
+.circon .fa-regular{
+    color: blue;
+    font-size: 15px;
+    
+}
+.bt{
+    position: absolute;
+    width: 60%;
+    text-align: center;
+    top: 20%;
+    left: 20%;
+}
+.bt h1{
+    color: crimson;
+}
+.bt p{
+    color: orchid;
+}
+.wedlinks a{
+    font-size: 30px;
+    padding: 100px;
+}
+.wedlinks p{
+    font-size: 20px;
+    padding: 100px;
+    padding-top: 10px;
+}
+.link1 h2{
+    font-size: 25px;
+    padding: 100px;
+    margin-top: -170px;
+    color: blue;
+
+}
+.link1 p{
+    font-size: 20px;
+    padding: 100px;
+    margin-top: -190px;
+
+}
+.wedlinks2 a h1{
+    font-size: 30px;
+    padding-left: 100px;
+}
+.wedlinks3 a h1{
+    font-size: 20px;
+    padding: 100px;
+    top: 5px;
+    position: relative;
+}
+.wedlinks4 a h1{
+    font-size: 20px;
+    padding: 100px;
+    top: 5px;
+    position: relative;
+}
+.foot{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+#footimg{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 8%;
+}
+.underline1 h1{
+    font-size: 20px;
+    color: white;
+    left: 6%;
+    top: 17%;
+}
+.underline1{
+    position: absolute;
+    left: 6%;
+    top: 17%;
+    
+}
+.underline{
+    display: inline-block;
+    position: relative;
+
+}
+.underline:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color:  #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.50s ease-out;
+  }
+  .underline:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  .underline2 p{
+    font-size: 20px;
+    color: grey;
+    left: 25%;
+    top: 17%;
+  }
+  .underline2{
+    position: absolute;
+    left: 25%;
+    top: 17%;
+    
+}
+.underline2 #p1{
+    font-size: 20px;
+    color: white;
+    left: 25%;
+    top: 17%;
+  }
+  /* .underline #p1{
+    position: absolute;
+    left: 28%;
+    top: 17%;
+    
+} */
+
+.underline3 #p2{
+    font-size: 20px;
+    color: white;
+    left: 42%;
+    top: 17%;
+  }
+  .underline3{
+    position: absolute;
+    left: 42%;
+    top: 17%;
+    
+}
+.underline3 p{
+    font-size: 20px;
+    color: grey;
+    left: 42%;
+    top: 17%;
+  }
+  .underline4 #p3{
+    font-size: 20px;
+    color: white;
+    left: 60%;
+    top: 17%;
+  }
+  .underline4{
+    position: absolute;
+    left: 60%;
+    top: 17%;
+    
+}
+.underline4 p{
+    font-size: 20px;
+    color: grey;
+    left: 60%;
+    top: 17%;
+  }
+  .underline5 #p4{
+    font-size: 20px;
+    color: white;
+    left: 70%;
+    top: 17%;
+  }
+  .underline5{
+    position: absolute;
+    left: 70%;
+    top: 17%;
+    
+}
+.underline5 p{
+    font-size: 20px;
+    color: grey;
+    left: 70%;
+    top: 17%;
+  }
+.icons{
+    position: absolute;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    top: 80%;
+
+}
+.con1{
+    position: absolute;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    top: 90%;
+}
+button{
+    position: relative;
+    left: 40%;
+    width: 80px;
+    height: 20px;
+    bottom: 40px;
+    background-color: blueviolet;   
+}
+.foot input{
+    position: absolute;
+    left: 60%;
+    top: 7%;
+    width: 15%;
+    height: 20px;
+}
+.foot #i{
+    position: absolute;
+    left: 76%;
+    top: 7%;
+    width: 15%;
+    height: 20px;
+    color: white;
+    font-size: 20px;
+}

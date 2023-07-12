@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <style>
+*{
+    margin: 0px;
+    padding: 0px;
+    outline: 0px;
+ }
+ .nav{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    background-color: #e0e0e0;
+    position: fixed;
+    z-index: 1;
+}
+
+.nav:hover{
+    background-color: gray;
+}
+.logo img{
+    width: 100px;
+    height: 100px;
+    padding-left: 20px;
+    border-radius: 10px;
+}
+.memu{
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    font-style: italic;
+}
+.memu div a{
+    width: 20%;
+    font-size: 20px;
+    color: rgb(25, 75, 25);
+    transition: width .2s; 
+
+}
+.nav a:hover{
+    width: 100%;
+    text-decoration: underline 2px gold;
+    
+}
+.log #h2{
+                padding-left: 40%;
+                padding-top: 10%;
+                font-size: 100px;
+    }
+
+    .log #h1{
+                padding-left: 45%;
+                padding-top: 1%;
+    }
+    .log #te1{
+            margin-left: 30%;
+            margin-top: 5%;
+            width: 30%;
+            height: 30px;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid gray;    
+    }
+    .log #ne1{
+            width: 10%;
+            height: 30px;
+            border: none;
+    }
+    .log #te2{
+            margin-left: 30%;
+            margin-top: 2%;
+            width: 30%;
+            height: 30px;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid gray;     
+    }
+    .log #te3{
+            margin-left: 30%;
+            margin-top: 2%;
+            width: 30%;
+            height: 30px;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid gray;     
+    }
+    .log #te4{
+            margin-left: 30%;
+            margin-top: 2%;
+            width: 30%;
+            height: 30px;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid gray;     
+    }
+    .model1{
+        display: flex;
+        flex-direction: column;
+        margin-left: 30%;
+        justify-content: space-around;
+        background-color: white;
+        display: none;
+        box-sizing: border-box;
+        width: 30%;
+        
+    }
+    .log #checkbox{
+            margin-left: 20%;
+            margin-top: 8%;
+            width: 20%;
+            height: 25px;
+    }
+    .log #poli{
+            margin-left: 35%;
+            margin-top: -2%;
+            
+    }
+    .log #Sign1{
+            width: 10%;
+            height: 50px;
+            border: none;
+            margin-left: 30%;
+            margin-top: 4%;
+
+    }
+    .log #log1{
+            margin-left: 7%;
+            margin-top: -8%;
+    }
+    .foot{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    margin-top: 10%;
+}
+#footimg{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 8%;
+}
+.underline1 h1{
+    font-size: 20px;
+    color: white;
+    left: 6%;
+    top: 17%;
+}
+.underline1{
+    position: absolute;
+    left: 6%;
+    top: 17%;
+    
+}
+.underline{
+    display: inline-block;
+    position: relative;
+
+}
+.underline:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color:  #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.50s ease-out;
+  }
+  .underline:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  .underline2 p{
+    font-size: 20px;
+    color: grey;
+    left: 25%;
+    top: 17%;
+  }
+  .underline2{
+    position: absolute;
+    left: 25%;
+    top: 17%;
+    
+}
+.underline2 #p1{
+    font-size: 20px;
+    color: white;
+    left: 25%;
+    top: 17%;
+  }
+  /* .underline #p1{
+    position: absolute;
+    left: 28%;
+    top: 17%;
+    
+} */
+
+.underline3 #p2{
+    font-size: 20px;
+    color: white;
+    left: 42%;
+    top: 17%;
+  }
+  .underline3{
+    position: absolute;
+    left: 42%;
+    top: 17%;
+    
+}
+.underline3 p{
+    font-size: 20px;
+    color: grey;
+    left: 42%;
+    top: 17%;
+  }
+  .underline4 #p3{
+    font-size: 20px;
+    color: white;
+    left: 60%;
+    top: 17%;
+  }
+  .underline4{
+    position: absolute;
+    left: 60%;
+    top: 17%;
+    
+}
+.underline4 p{
+    font-size: 20px;
+    color: grey;
+    left: 60%;
+    top: 17%;
+  }
+  .underline5 #p4{
+    font-size: 20px;
+    color: white;
+    left: 70%;
+    top: 17%;
+  }
+  .underline5{
+    position: absolute;
+    left: 70%;
+    top: 17%;
+    
+}
+.underline5 p{
+    font-size: 20px;
+    color: grey;
+    left: 70%;
+    top: 17%;
+  }
+.icons{
+    position: absolute;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    top: 80%;
+
+}
+.con1{
+    position: absolute;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    top: 90%;
+}
+.foot input{
+    position: absolute;
+    left: 60%;
+    top: 7%;
+    width: 15%;
+    height: 20px;
+}
+.foot #i{
+    position: absolute;
+    left: 76%;
+    top: 7%;
+    width: 15%;
+    height: 20px;
+    color: white;
+    font-size: 20px;
+}
+        
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="logo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS34CXr8t6xarpb6tDMdmuJD6ZlXq1V8ldBGtJyB8BT-zdiNgCvwPQHLroxNTKdv8ioEEpCRDQrAWI&usqp=CAU&ec=48600113" alt="">
+        </div>
+        <div class="memu">
+            <div><a href="./index.html">Home</a></div>
+            <div><a href="./prj1.html">Cars</a></div>
+            <div><a href="./buy.html">Buy</a></div>
+            <div><a href="./imgprj.html">Images</a></div>
+            <div><a href="./owner.html">Owners</a></div>
+            <div><a href="./log.html">Login</a></div>
+        </div>
+    </nav>
+    <div class="log">
+        <!-- <img id="log1" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKkAAAB/CAMAAACjbBIvAAAAY1BMVEX///8AAADV1dVWVla0tLTOzs7a2tr8/PwRERHq6uoaGhpxcXGVlZXIyMjy8vJQUFCCgoJeXl5paWk9PT27u7urq6vg4OBISEiPj482NjYlJSWlpaVkZGQuLi4fHx97e3udnZ3e/DOxAAACn0lEQVR4nO2Y27KiMBBFAdEYlQCKiJej/v9Xjg5H2SGJJKg1VVN7PQKdXnQuJEQRIYQQQgghhBBCCCGEEEIIIYQQQv4LxL8W8KQ+zYYfSpb5xKTyyyCy5SMiL9RYT3FcxIOmqojteKVVFwxZjRTNznE8HzAV23mX6CfHtNPhDCKdY0S8HDXW1PoeO2CanCDPqa7CTOWy1w1jTNWqjX1pKrHjd7eBmYaYiq0xYEaYZo9+fGWa/kCS5j4sQ0zlxBANN5Vdn7pNZxtIUcrW3dtUrEzPcFNRdrEuU1HAXJhXvxm8TWc4vseb4vhxmOKMj1fP9j1N1dXqGW7aDJlqFcmT7oaf6WzXPXRoFm+Y4hCymEp8k32Kt3xMFYavpTp/zbTCmVRI7Z6HaQbh51RE8ls11Zb6MulFDppqK/Dl/ppfMlUNzKTD1mh3yBT745C17l8xrXCpj0sz8rWpxN1I87uB+Yap8VHJg2oqKnDaZc9WP24qcMo+qtpv+IWpxAHedDvCT5uKam+KmlV1moojLEYbHFEfNq372zNHVV2m9RquX7Ut9kdNFV446F9svap2U3XEd6v1ZJrp5R3TOsp2mCiJ9I+2VlWraQ0bnvjad9FMr2GiummFHbf5e4zDEt2qCp1pMdU65CSNZGg6Cd2eWreOd25nR2E+AOuqaZrg0eoozEM5mF7M9xhnWnYNuaraN9XOrWvrYfVpWnqc1/1MKyyHvrg+q6qZJtE0d8WbpuaneaTpqteQflqbKIvpEV/H+dOhNQ2d9E7Tnbnb0B+aWEyBg/uHyt1039+T+ZLovwviTWo+I3pVbceqKmMLi1cVk7c92fi/X3WGTB1Tsp4mQNu7KrFQ2+NbVBE84wkhhBBCCCGEEEIIIYQQQgghhBBC3uEPUDwdtdSHM2wAAAAASUVORK5CYII=" alt=""> -->
+        <h2 id="h2">KIA</h2>
+        <h1 id="h1">Log in</h1>
+        <input id ="te1" type="text" placeholder="enter name" onkeyup="nam(this)"/>
+        <button id="ne1">Next</button>
+        <input id="te2" class="pwd" type="text" placeholder="password" onkeyup="pwd(this)"/>
+        <button id="ne1">Next</button>
+        <input id ="te3" type="text" placeholder="enter email" onkeyup="email(this)"/>
+        <button id="ne1">Next</button>
+        <input id="te4" class="pwd" type="text" placeholder="password" onkeyup="pwd(this)"/>
+        <button id="ne1">Next</button>
+        <input id="te4" type="text" placeholder="phone number"onkeyup="phone(this)"/>
+        <button id="ne1">Next</button>
+        <input id="te4" type="text" placeholder="enter OTP" onkeyup="OTP(this)"/>
+        <button id="ne1">Next</button>
+        <input id="te4" type="text" placeholder="Model"><i class="fa-solid fa-caret-down" onclick="fun(0,this)"></i>
+        <div class="model1"><p><li>SONET</li></p><br><p><li>Seltos</li></p><br><p><li>Carnival</li></p><br><p><li>Carens</li></p><br><p><li>EV6</li></p></div>
+        <input id="te4" type="text" placeholder="state"><i class="fa-solid fa-caret-down" onclick="fun(1,this)"></i>
+        <div class="model1"><p><li>Andhra Pradesh</li></p><br><p><li>Telangana State</li></p><br><p><li>Tamil Nadu</li></p><br><p><li>Delhi</li></p><br><p><li>Karnataka</li></p></div>
+        <input id="te4" type="text" placeholder="City"><i class="fa-solid fa-caret-down" onclick="fun(2,this)"></i>
+        <div class="model1"><p><li>Visakhapatnam</li></p><br><p><li>Hyderabad</li></p><br><p><li>Chennai</li></p><br><p><li>Delhi</li></p><br><p><li>Bengaluru</li></p></div>
+        <input id="te4" type="text" placeholder="Address" onkeyup="add(this)">
+        <input id="te4" type="text" placeholder="ZIP Code" onkeyup="code(this)"><br>
+        <input id="checkbox" type="checkbox">
+        <p id="poli">I accept the <i><u> Terms & Conditions </u></i>and <i><u> Privacy Policy.</u></i></p>
+        <button id="Sign1">Sign up</button>
+        <p id="log1">Already have an account? <a href="Log in"> Log in</a></p>
+        <div class="foot">
+            <input type="text" placeholder="search">
+        <i id="i" class="fa-solid fa-magnifying-glass"></i>
+            <img id="footimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANsAAAB7CAMAAADKQQWcAAAAY1BMVEUBAQH+/v4AAACmpqYtLS0kJCTf39+MjIybm5vv7+/z8/P4+Pjn5+fT09PY2Nh5eXkZGRltbW1zc3MeHh5jY2M+Pj42NjbExMRXV1fNzc1RUVFdXV24uLitra2BgYEKCgpJSUkg7wqWAAADTklEQVR4nO2Z23aCMBBFdRC5KuANxSr9/6/sRCtOQpCwWsSHs9+6SJrZyZhMYDYDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+FWLcWtkYMsrgTn+Fh1r0j8attr4F1ziJ8qZP/i45Ij9M6r7B2N9bLS14C6c4qQ5PTZ/V5h1yKj926/m8ZyxulXErK1eHOImqk+wT+eO7ccz726Cv4+NW0mypxRn2unE2e8aEuC32X+DfQBjN+9xUOibPsJIwvw5x4/krVuZij+3Gg1bp71jd8anQUhHV6kwUOLuR6n9J5iYju7FZ2YzVGR/RUU56WnBLdzellkUts7HdePbFoPb4eM59L5Ye6rAYsG6czl8Ws5HdjACt8al0lJN++r43c3Xj/huZzm9z87VRbfHx6SA3xOXmUU84uhF92xdtdLeFNpYZn8q8XEtH79CUSk5u3DoU0xdpfaZ0Y7V6I9IxWana6tHGxY0XTS76l08f40a7UjxdZyTUHNzUwSkWfan6f4YbB9JKR61vj1tT7Yj+n+FGVGtH0mlh3kl63FTxLRf9eFv06d3UBJ9L7dGudd165UZGiZV429vz6d1UZJdYezKPjgPc1D+Qxefy3Pznyd3qq2HGxOZt66VbJjf+8HluTOtGWoUpV27ntpeoC/xFPCmPJJ5N6aYO63bBbpPrcFMlltiE4qDWdqgJ3Wh2lVXYScvNSEtLuxtv/LLEKvfGHjOh2167ylzrTHseyw3F5saTI+cmDlrVgOyTjvpOwXA7GDdrlV9ag6h4BmtxM0qssvUmS3czzUd1k4d1Wd0P20z79XFadrtRHsiN/9p+AyndonHVTLcn8SZ//H70lYurznsAHbS6+GAJXbiVrQPzPW7iROJwCm3lmnPOdPPl3+uzNfLGLa1k2f1Gt9uJ9Mw9My0L2707OMsS67Ltus79zl0+/itzm1tc1ObmVuirel8T3S0Sp0XamW53t9N+bK/bWLn5zjDy2jPKvzntnEtuL5HpYD/jZUK3xmO3dbvsHgU+0EJPEla2cfmSKptdgvuGX3gWwld7BNVJ6Pxd5K84fm2ytur6XPX65fT7vky1IhzSbKjZvcv/hg8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPwnP4FFIYwJcp+LAAAAAElFTkSuQmCC" alt="">  
+            <div class="underline1">
+            <h1 class="underline">VR Showroom</h1>
+            <br>
+            <br>
+            <h1 class="underline">Configure</h1>
+            <br>
+            <br>
+            <h1 class="underline">Book Online</h1>
+            <br>
+            <br>
+            <h1 class="underline">My Order</h1>
+            <br>
+            <br>
+            <h1 class="underline">Find a Dealer</h1>
+            <br>
+            <br>
+            <h1 class="underline">Test Drive</h1>
+            <br>
+            <br>
+            <h1 class="underline">Contact Us</h1>
+            <br>
+            <br>
+            <h1 class="underline">Become a Kia Partner</h1>
+        </div>
+        <div class="underline2">
+            <p id="p1" class="underline">Buy</p>
+            <br>
+            <br>
+            <p class="underline">How it Works</p>
+            <br>
+            <br>
+            <p class="underline">Configure</p>
+            <br>
+            <br>
+            <p class="underline">Download Brochure</p>
+            <br>
+            <br>
+            <p class="underline">Find a Dealer</p>
+            <br>
+            <br>
+            <p class="underline">Kia Digi Connect</p>
+            <br>
+            <br>
+            <p class="underline">Test Drive</p>
+            <br>
+            <br>
+            <p class="underline">Book Online</p>
+            <br>
+            <br>
+            <p class="underline">EMI Calculator</p>
+            <br>
+            <br>
+            <p class="underline">My Order</p>
+        </div>
+        <div class="underline3">
+            <p id="p2" class="underline">Owners</p>
+            <br>
+            <br>
+            <p class="underline">Kia Service</p>
+            <br>
+            <br>
+            <p class="underline">Service and <br> Maintenance</p>
+            <br>
+            <br>
+            <p class="underline">Service Offerings</p>
+            <br>
+            <br>
+            <p class="underline">Customer Awareness</p>
+            <br>
+            <br>
+            <p class="underline">EV Owners</p>
+            <br>
+            <br>
+            <p class="underline">IoT Experience </p>
+        </div>
+        <div class="underline4">
+            <p id="p3" class="underline">Discover Kia</p>
+            <br>
+            <br>
+            <p class="underline">Our Story</p>
+            <br>
+            <br>
+            <p class="underline">Kia in India</p>
+            <br>
+            <br>
+            <p class="underline">Innovation</p>
+            <br>
+            <br>
+            <p class="underline">News</p>
+            <br>
+            <br>
+            <p class="underline">Kia Art Beat</p>
+            <br>
+            <br>
+            <p class="underline">PBV</p>
+        </div>
+        <div class="underline5">
+            <p id="p4" class="underline">Legal</p>
+            <br>
+            <br>
+            <p class="underline">Privacy Policy</p>
+            <br>
+            <br>
+            <p class="underline">Terms of Use</p>
+            <br>
+            <br>
+            <p class="underline">Online Sales T&C</p>
+            <br>
+            <br>
+            <p class="underline">Contact Us</p>
+            <br>
+            <br>
+            <p class="underline">CSR Policy</p>
+            <br>
+            <br>
+            <p class="underline">CSR Plans 2022-23</p>
+            <br>
+            <br>
+            <p class="underline">Composition of CSR <br> Committe</p>
+            <br>
+            <br>
+            <p class="underline">Whistle Blower Policy</p>
+        </div>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-pinterest"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-solid fa-phone"></i>
+        </div>
+        <div class="con1">
+            <p><i class="fa-solid fa-user"></i>&nbsp; &nbsp;Show Interest</p>
+            <p><i class="fa-solid fa-gears"></i>&nbsp; &nbsp; Test Drive</p>
+            <p><i class="fa-sharp fa-solid fa-car-side"></i>&nbsp; &nbsp;Get a Quote</p>
+            <p><i class="fa-solid fa-phone"></i>&nbsp; &nbsp;Call</p>
+        
+        </div>
+        </div>
+    </div>
+        <script>
+            let i=undefined
+            let ar=document.getElementsByClassName("model1")
+            function fun(id,e)
+            {
+                if(i==undefined)
+                {
+                ar[id].style.display="bolck"
+                e.className="fa-solid fa-caret-up"
+                i=id
+            }
+            else{
+                if(i==id)
+                {
+                    if(ar[i].style.display=="none")
+                    {
+                        ar[i].style.display="block";
+                        document.getElementsByTagName("i")[i].className="fa-solid fa-caret-up"
+                    }
+                    else
+                    {
+                        ar[i].style.display="none";
+                        document.getElementsByTagName("i")[i].className="fa-solid fa-caret-down"
+                    }
+                }
+                else
+                {
+                    ar[i].style.display="none";
+                    document.getElementsByTagName("i")[i].className="fa-solid fa-caret-down"
+                    ar[id].style.display="block";
+                    e.className="fa-solid fa-caret-up"
+                    i=id
+                }
+            }
+         }  
+        </script>
+        <script>
+            function nam(e)
+            {
+                let na=/^[A-Za-z]{6,}$/
+                if(na.test(e.value))
+                {
+                    e.style.border="2px solid green";
+                }
+                else
+                {
+                    e.style.border="2px solid blue";
+                }
+            }
+        </script>
+       <script>
+        function phone(e)
+        {    
+            if (/^[6-9][0-9]{9}$/.test(e.value))
+            {
+                    e.style.border="2px solid green";
+                }
+                else
+                {
+                    e.style.border="2px solid blue";
+                }
+        }
+
+       </script>
+       <script>
+        function pwd(e)
+        {
+
+            if(/^[A-Z]{1,}[a-z]{1,}[@#$%^&*]{1,}[0-9]{1,}/.test(e.value))
+            {
+                e.style.border="2px solid green";
+            }
+            else{
+                e.style.border="2px solid blue";
+            }
+            
+        }
+       </script>
+       <script>
+        function email(e)
+        {
+            if(/^[a-z0-9_]{1,}@[a-z]{3,}[.](com|co.in|in|org|)$/.test(e.value))
+            {
+                e.style.border="2px solid green";
+            }
+            else{
+                e.style.border="2px solid blue";
+            }
+        }
+       </script>
+       <script>
+        function OTP(e)
+        {
+            if(/^[0-9]{5,}$/.test(e.value))
+            {
+                e.style.border="2px solid green";
+            }
+            else{
+                e.style.border="2px solid blue";
+            }
+        }
+       </script>
+       <script>
+        function code(e)
+        {
+            if(/^[0-9]{6,}$/.test(e.value))
+            {
+                e.style.border="2px solid green";
+            }
+            else{
+                e.style.border="2px solid blue";
+            }
+        }
+       </script>
+       <script>
+        function add(e)
+        {
+            let na=/^[A-Za-z]{10,}$/
+            if(na.test(e.value))
+            {
+                e.style.border="2px solid green";
+            }
+            else
+            {
+                e.style.border="2px solid blue";
+            }
+        }
+    </script>
+    
+</body>
+</html>

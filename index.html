@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title>KIA PROJECT</title>
+    <link rel="icon" href="data:image/png;base64,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">
+    <link rel="stylesheet" href="./prj.css">
+    <script src="pyt/prj.js"></script>
+   
+</head>
+<body>
+    <a id="top"></a>
+    <nav class="nav">
+        <div class="logo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS34CXr8t6xarpb6tDMdmuJD6ZlXq1V8ldBGtJyB8BT-zdiNgCvwPQHLroxNTKdv8ioEEpCRDQrAWI&usqp=CAU&ec=48600113" alt="">
+        </div>
+        <div class="memu">
+            <div><a href="./index.html">Home</a></div>
+            <div><a href="./prj1.html">Cars</a></div>
+            <div><a href="./buy.html">Buy</a></div>
+            <div><a href="./imgprj.html">Images</a></div>
+            <div><a href="./owner.html">Owners</a></div>
+            <div><a href="./log.html">Login</a></div>
+        </div>
+    </nav>
+    <div class="home">
+        <div><img class="car" src="https://imgd.aeplcdn.com/664x374/n/cw/ec/144185/sonet-exterior-right-front-three-quarter-2.jpeg?isig=0&q=75" alt="">
+        </div>
+    <div class="it" onclick="dec()"><i class="fa-sharp fa-solid fa-less-than"></i></div>
+    <div class="gt"onclick="fun()"><i class="fa-solid fa-greater-than"></i></div>
+    <div class="bt">
+        <h1>KIA</h1>
+        <p>SONET</p>
+    </div>
+        <div class="circon">
+            <i class="fa-solid fa-circle" onclick="fun(0)"></i>
+            <i class="fa-regular fa-circle" onclick="fun(1)"></i>
+            <i class="fa-regular fa-circle" onclick="fun(2)"></i>
+            <i class="fa-regular fa-circle" onclick="fun(3)"></i>
+            <i class="fa-regular fa-circle" onclick="fun(4)"></i>
+        </div>
+        <div class="wedlinks">
+            <h1><a href="https://www.kia.com">Kia - Drive Modes & Traction Control - Kia India | Book Now</a></h1>
+            <p>Front and Side Airbags, Highline Tyre Pressure Monitor, 6 Airbags, 
+                ESC/ HAC/ VSM/ BA. Electronic Stability Control, Front & Rear Parking Sensors,
+                 Hill Assist Control. Book Now. 6 Airbags. Refined & Powerful Engine. 
+                 Ventilated Front Seats. All Wheel Disc Brakes.</p>
+            <div class="link1"><h2>Find a Nearest Dealer</h2>
+            <p>Use our dealer locator to find a Kia Car dealership near you</p>
+            <h2>Kia Digi-Connect</h2>
+            <p>Industry First integrated digital sales consultation</p>
+            <h2>Book Now</h2>
+            <p>Book the all-new Kia EV6 Kia India website</p>
+            <h2>Request a Test Drive</h2>
+            <p>Scheduled a test drive of your favourite car at nearest Dealership</p>
+        </div>
+            <div class="wedlinks2">
+            <h1><a href="https://www.vihaankia.in">Vihaan KIA - #1 Kia Showroom in Hyderabad</a></h1>
+            <p>Vihaan KIA is an authorized sales and service dealer of KIA in Hyderabad. Visit your nearest KIA Showroom in Hyd to know more KIA Seltos, Sonet, Carnival & Carens. Bookings Open.
+                ‎Kia Carens · ‎Kia Seltos · ‎Kia Sonet · ‎Kia Carnival · ‎Kukatpally Showroom
+                </p>
+                
+        </div>
+        <div class="wedlinks3">
+            <h1><a href="https://www.cardekho.com">Kia Seltos - Seltos Car Price In India, Images, Review & ...</a></h1>
+            <p>Kia Seltos is a 5 seater SUV available in a price range of Rs. 10.89 - 19.65 Lakh*. It is available in 13 variants, 2 engine options that are BS6 compliant and ...
+                Pros and cons: Driver MID ⋅ Cabin build and quality ⋅ Underthigh support ⋅ View full list</p>
+        </div>
+        <div class="wedlinks4">
+            <h1><a href="https://www.cardekho.com/cars/Kia">Kia Cars Price 2023 - Check Showrooms, Specs & Electric ...</a></h1>
+        <p>The price of Kia cars in India starts from Rs. 7.79 Lakh for the Sonet while the most expensive Kia car in India one is the EV6 with a price of Rs. 65.95 Lakh.
+            Affordable Model: Kia Sonet(Rs. 7.79 Lakh)
+            Upcoming Models: Kia Sportage, Kia Seltos 2...
+            Popular Models: Seltos, Sonet, EV6, Carens, ...
+            Most Expensive: Kia EV6(Rs. 60.95 Lakh)
+            You've visited this page many times. Last visit: 15/5/23</p>
+        </div>
+    </div>
+    </div>
+    <button><a href="#top">back to top</a></button>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3868.5302101030966!2d77.6160830744624!3d14.16369478762527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb16d9599ed1ccd%3A0x3c471878d7bf7751!2sKIA%20India%20Private%20Limited!5e0!3m2!1sen!2sin!4v1684836658952!5m2!1sen!2sin" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <br>
+    
+
+    <div class="foot">
+        <input type="text" placeholder="search">
+        <i id="i" class="fa-solid fa-magnifying-glass"></i>
+        <img id="footimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANsAAAB7CAMAAADKQQWcAAAAY1BMVEUBAQH+/v4AAACmpqYtLS0kJCTf39+MjIybm5vv7+/z8/P4+Pjn5+fT09PY2Nh5eXkZGRltbW1zc3MeHh5jY2M+Pj42NjbExMRXV1fNzc1RUVFdXV24uLitra2BgYEKCgpJSUkg7wqWAAADTklEQVR4nO2Z23aCMBBFdRC5KuANxSr9/6/sRCtOQpCwWsSHs9+6SJrZyZhMYDYDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+FWLcWtkYMsrgTn+Fh1r0j8attr4F1ziJ8qZP/i45Ij9M6r7B2N9bLS14C6c4qQ5PTZ/V5h1yKj926/m8ZyxulXErK1eHOImqk+wT+eO7ccz726Cv4+NW0mypxRn2unE2e8aEuC32X+DfQBjN+9xUOibPsJIwvw5x4/krVuZij+3Gg1bp71jd8anQUhHV6kwUOLuR6n9J5iYju7FZ2YzVGR/RUU56WnBLdzellkUts7HdePbFoPb4eM59L5Ye6rAYsG6czl8Ws5HdjACt8al0lJN++r43c3Xj/huZzm9z87VRbfHx6SA3xOXmUU84uhF92xdtdLeFNpYZn8q8XEtH79CUSk5u3DoU0xdpfaZ0Y7V6I9IxWana6tHGxY0XTS76l08f40a7UjxdZyTUHNzUwSkWfan6f4YbB9JKR61vj1tT7Yj+n+FGVGtH0mlh3kl63FTxLRf9eFv06d3UBJ9L7dGudd165UZGiZV429vz6d1UZJdYezKPjgPc1D+Qxefy3Pznyd3qq2HGxOZt66VbJjf+8HluTOtGWoUpV27ntpeoC/xFPCmPJJ5N6aYO63bBbpPrcFMlltiE4qDWdqgJ3Wh2lVXYScvNSEtLuxtv/LLEKvfGHjOh2167ylzrTHseyw3F5saTI+cmDlrVgOyTjvpOwXA7GDdrlV9ag6h4BmtxM0qssvUmS3czzUd1k4d1Wd0P20z79XFadrtRHsiN/9p+AyndonHVTLcn8SZ//H70lYurznsAHbS6+GAJXbiVrQPzPW7iROJwCm3lmnPOdPPl3+uzNfLGLa1k2f1Gt9uJ9Mw9My0L2707OMsS67Ltus79zl0+/itzm1tc1ObmVuirel8T3S0Sp0XamW53t9N+bK/bWLn5zjDy2jPKvzntnEtuL5HpYD/jZUK3xmO3dbvsHgU+0EJPEla2cfmSKptdgvuGX3gWwld7BNVJ6Pxd5K84fm2ytur6XPX65fT7vky1IhzSbKjZvcv/hg8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPwnP4FFIYwJcp+LAAAAAElFTkSuQmCC" alt="">  
+        <div class="underline1">
+        <h1 class="underline">VR Showroom</h1>
+        <br>
+        <br>
+        <h1 class="underline">Configure</h1>
+        <br>
+        <br>
+        <h1 class="underline">Book Online</h1>
+        <br>
+        <br>
+        <h1 class="underline">My Order</h1>
+        <br>
+        <br>
+        <h1 class="underline">Find a Dealer</h1>
+        <br>
+        <br>
+        <h1 class="underline">Test Drive</h1>
+        <br>
+        <br>
+        <h1 class="underline">Contact Us</h1>
+        <br>
+        <br>
+        <h1 class="underline">Become a Kia Partner</h1>
+    </div>
+    <div class="underline2">
+        <p id="p1" class="underline">Buy</p>
+        <br>
+        <br>
+        <p class="underline">How it Works</p>
+        <br>
+        <br>
+        <p class="underline">Configure</p>
+        <br>
+        <br>
+        <p class="underline">Download Brochure</p>
+        <br>
+        <br>
+        <p class="underline">Find a Dealer</p>
+        <br>
+        <br>
+        <p class="underline">Kia Digi Connect</p>
+        <br>
+        <br>
+        <p class="underline">Test Drive</p>
+        <br>
+        <br>
+        <p class="underline">Book Online</p>
+        <br>
+        <br>
+        <p class="underline">EMI Calculator</p>
+        <br>
+        <br>
+        <p class="underline">My Order</p>
+    </div>
+    <div class="underline3">
+        <p id="p2" class="underline">Owners</p>
+        <br>
+        <br>
+        <p class="underline">Kia Service</p>
+        <br>
+        <br>
+        <p class="underline">Service and <br> Maintenance</p>
+        <br>
+        <br>
+        <p class="underline">Service Offerings</p>
+        <br>
+        <br>
+        <p class="underline">Customer Awareness</p>
+        <br>
+        <br>
+        <p class="underline">EV Owners</p>
+        <br>
+        <br>
+        <p class="underline">IoT Experience </p>
+    </div>
+    <div class="underline4">
+        <p id="p3" class="underline">Discover Kia</p>
+        <br>
+        <br>
+        <p class="underline">Our Story</p>
+        <br>
+        <br>
+        <p class="underline">Kia in India</p>
+        <br>
+        <br>
+        <p class="underline">Innovation</p>
+        <br>
+        <br>
+        <p class="underline">News</p>
+        <br>
+        <br>
+        <p class="underline">Kia Art Beat</p>
+        <br>
+        <br>
+        <p class="underline">PBV</p>
+    </div>
+    <div class="underline5">
+        <p id="p4" class="underline">Legal</p>
+        <br>
+        <br>
+        <p class="underline">Privacy Policy</p>
+        <br>
+        <br>
+        <p class="underline">Terms of Use</p>
+        <br>
+        <br>
+        <p class="underline">Online Sales T&C</p>
+        <br>
+        <br>
+        <p class="underline">Contact Us</p>
+        <br>
+        <br>
+        <p class="underline">CSR Policy</p>
+        <br>
+        <br>
+        <p class="underline">CSR Plans 2022-23</p>
+        <br>
+        <br>
+        <p class="underline">Composition of CSR <br> Committe</p>
+        <br>
+        <br>
+        <p class="underline">Whistle Blower Policy</p>
+    </div>
+    <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-pinterest"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-solid fa-phone"></i>
+    </div>
+    <div class="con1">
+        <p><i class="fa-solid fa-user"></i>&nbsp; &nbsp;Show Interest</p>
+        <p><i class="fa-solid fa-gears"></i>&nbsp; &nbsp; Test Drive</p>
+        <p><i class="fa-sharp fa-solid fa-car-side"></i>&nbsp; &nbsp;Get a Quote</p>
+        <p><i class="fa-solid fa-phone"></i>&nbsp; &nbsp;Call</p>
+    
+    </div>
+    </div>
+        
+
+
+
+
+    
+    
+</body>
+</html>
